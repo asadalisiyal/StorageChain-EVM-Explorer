@@ -373,11 +373,11 @@ function App(props: any) {
                       <CodeIcon />
                     </IconButton>
                   </Tooltip>
-                  <Tooltip title={t("Toggle Dark Mode") as string}>
+                  {/* <Tooltip title={t("Toggle Dark Mode") as string}>
                     <IconButton onClick={darkMode.toggle} className="icon-color">
                       {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
                     </IconButton>
-                  </Tooltip>
+                  </Tooltip> */}
                 </Grid>
               </Grid>
             </Toolbar>
