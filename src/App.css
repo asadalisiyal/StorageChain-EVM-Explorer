@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  z-index: 1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #08a771;
+  border-radius: 5px;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem;
+  
+}
+
+.position-stats {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.position-stats > Button {
+  border: 2px solid #08a771 !important;
+  font-size: 0.875rem;
+  color: black;
+}
+
+.icon-color svg {
+  fill: #08a771;
+}
+
+.icon-arrow svg {
+  fill: #08a771;
+  font-size: 18px;
+}
+
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 16px !important;
+  fill: #08a771;
+}
+
+.MuiTypography-colorPrimary {
+  color: #08a771 !important;
+}
