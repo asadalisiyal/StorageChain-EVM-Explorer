@@ -284,7 +284,7 @@ function App(props: any) {
                       <Grid>
                         <Typography color="textSecondary" variant="h6">
                           {/* {t("Expedition")} */}
-                          Cchat
+                          OTO
                         </Typography>
                       </Grid>
                     </Grid>
@@ -363,7 +363,7 @@ function App(props: any) {
                       <NotesIcon />
                     </IconButton>
                   </Tooltip>
-                  <Tooltip title={t("Expedition Github") as string}>
+                  {/* <Tooltip title={t("Expedition Github") as string}>
                     <IconButton
                      className="icon-color"
                       onClick={() =>
@@ -372,7 +372,7 @@ function App(props: any) {
                     >
                       <CodeIcon />
                     </IconButton>
-                  </Tooltip>
+                  </Tooltip> */}
                   {/* <Tooltip title={t("Toggle Dark Mode") as string}>
                     <IconButton onClick={darkMode.toggle} className="icon-color">
                       {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
@@ -398,7 +398,7 @@ function App(props: any) {
           <div style={{ maxWidth: "1400px", margin: "auto", paddingLeft: "1.5rem" }}>
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The Cchat Blockchain Explorer
+                The OTO Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"

@@ -60,7 +60,7 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
             background: "transparent",
             borderRadius: "8px",
             border: "1px solid #e7eaf3",
-            padding: "2rem",
+            // padding: "2rem",
             boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
             margin: "1rem",
           }}
@@ -80,7 +80,7 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
           background: "transparent",
           borderRadius: "8px",
           border: "1px solid #e7eaf3",
-          padding: "2rem",
+          // padding: "2rem",
           boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
           margin: "1rem",
         }}
@@ -100,7 +100,7 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
           background: "transparent",
           borderRadius: "8px",
           border: "1px solid #e7eaf3",
-          padding: "2rem",
+          // padding: "2rem",
           boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
           margin: "1rem",
         }}
@@ -120,7 +120,7 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
           background: "transparent",
           borderRadius: "8px",
           border: "1px solid #e7eaf3",
-          padding: "2rem",
+          // padding: "2rem",
           boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
           margin: "1rem",
         }}
