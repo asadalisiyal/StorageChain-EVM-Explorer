@@ -65,7 +65,9 @@ function App(props: any) {
   const { t } = useTranslation();
   const darkMode = useDarkMode();
   const [search, setSearch] = useState();
-  const theme = darkMode.value ? darkTheme : lightTheme;
+  const theme = 
+  // darkMode.value ? darkTheme :
+   lightTheme;
 
   const [selectedChain, setSelectedChain] = useState<Chain>();
   const [chains, setChains] = useChainListStore<[Chain[], Dispatch<Chain[]>]>();
