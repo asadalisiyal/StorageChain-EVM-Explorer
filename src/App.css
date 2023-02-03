@@ -14,7 +14,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #08a771;
+  background: #088dcd;
   border-radius: 5px;
 }
 
@@ -22,7 +22,6 @@ body {
   max-width: 1400px;
   margin: auto;
   padding: 2rem;
-  
 }
 
 .position-stats {
@@ -32,25 +31,25 @@ body {
 }
 
 .position-stats > Button {
-  border: 2px solid #08a771 !important;
+  border: 2px solid #088dcd !important;
   font-size: 0.875rem;
   color: black;
 }
 
 .icon-color svg {
-  fill: #08a771;
+  fill: #088dcd;
 }
 
 .icon-arrow svg {
-  fill: #08a771;
+  fill: #088dcd;
   font-size: 18px;
 }
 
 .MuiButton-iconSizeMedium > *:first-child {
   font-size: 16px !important;
-  fill: #08a771;
+  fill: #088dcd;
 }
 
 .MuiTypography-colorPrimary {
-  color: #08a771 !important;
+  color: #088dcd !important;
 }

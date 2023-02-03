@@ -92,7 +92,7 @@ const MinerStatsTable: React.FC<IProps> = ({ blocks }) => {
                                 <Button
                                   variant="outlined"
                                   style={{
-                                    border: "1px solid #08a771",
+                                    border: "1px solid #088DCD",
                                     margin: "3px",
                                     background: `linear-gradient(to right, ${greenColor[600]} 0% ${percentFull}%, transparent ${percentFull}% 100%)`,
                                   }}
