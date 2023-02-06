@@ -10,7 +10,7 @@ export default function () {
     {
       name: "StorageChain",
       network: "testnet",
-      rpc: ["http://24.199.122.133:9933/"],
+      rpc: ["http://24.199.122.133:9936"],
     },
     // {
     //   name: "Matic",
