@@ -9,19 +9,19 @@ export default function () {
   const [chains, setChains] = React.useState<Chain[]>([
     {
       name: "StorageChain",
-      network: "mainnet",
+      network: "testnet",
       rpc: ["http://24.199.122.133:9933/"],
     },
-    {
-      name: "Matic",
-      network: "mainnet",
-      rpc: ["https://rpc-mainnet.matic.network"],
-    },
-    {
-      name: "Matic - Mumbai",
-      network: "testnet",
-      rpc: ["https://rpc-mumbai.matic.today"],
-    },
+    // {
+    //   name: "Matic",
+    //   network: "mainnet",
+    //   rpc: ["https://rpc-mainnet.matic.network"],
+    // },
+    // {
+    //   name: "Matic - Mumbai",
+    //   network: "testnet",
+    //   rpc: ["https://rpc-mumbai.matic.today"],
+    // },
   ]);
 
   // uncomment once we add 'chain list provider' concept. This list blows.
