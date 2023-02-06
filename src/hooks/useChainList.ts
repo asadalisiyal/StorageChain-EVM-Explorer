@@ -5,12 +5,12 @@ import React from "react";
 
 // const mergeChainSets = (c1: Chain[], c2: Chain[]) => uniqBy(c1.concat(c2), "name");
 
-export default function() {
+export default function () {
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "OTO",
+      name: "StorageChain",
       network: "mainnet",
-      rpc: ["http://135.181.49.66:9933/"],
+      rpc: ["http://24.199.122.133:9933/"],
     },
     {
       name: "Matic",

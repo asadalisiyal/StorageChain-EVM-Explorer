@@ -414,7 +414,7 @@ function App(props: any) {
           >
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The OTO Blockchain Explorer
+                The StorageChain Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"
