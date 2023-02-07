@@ -15,16 +15,22 @@ function AddressView(props: IAddressViewProps) {
   return (
     <Card>
       <CardContent>
-        <Typography variant="h6">{t("Address")}: {address}</Typography>
-        <Typography variant="h6">{t("Balance")}: {balance}</Typography>
-        <Typography variant="h6">{t("Transactions")}: {txCount}</Typography>
+        <Typography variant="h6">
+          {t("Address")}: {address}
+        </Typography>
+        <Typography variant="h6">
+          {t("Balance")}: {balance}
+        </Typography>
+        <Typography variant="h6">
+          {t("Transactions")}: {txCount}
+        </Typography>
         <br />
-        <div>
+        {/* <div>
           <div>{t("Code")}</div>
           <pre>
             <code>{code}</code>
           </pre>
-        </div>
+        </div> */}
       </CardContent>
     </Card>
   );

@@ -63,7 +63,7 @@ const MinerStatsTable: React.FC<IProps> = ({ blocks }) => {
           <TableRow>
             <TableCell>Blocks Mined</TableCell>
             <TableCell>Address</TableCell>
-            <TableCell>ExtraData</TableCell>
+            {/* <TableCell>ExtraData</TableCell> */}
             <TableCell>Blocks</TableCell>
           </TableRow>
         </TableHead>
@@ -74,7 +74,7 @@ const MinerStatsTable: React.FC<IProps> = ({ blocks }) => {
                 {minerData.blocksMined}
               </TableCell>
               <TableCell>{minerData.address}</TableCell>
-              <TableCell colSpan={2}>
+              <TableCell>
                 <Table>
                   <TableBody>
                     {_.map(

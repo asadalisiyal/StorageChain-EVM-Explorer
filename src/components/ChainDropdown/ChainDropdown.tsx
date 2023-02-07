@@ -44,8 +44,14 @@ const ChainDropdown: React.FC<IProps> = (props: IProps) => {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 10.5,
+            marginTop: "50px",
           },
         }}
+        MenuListProps={{
+          "aria-labelledby": "basic-button",
+        }}
+        transformOrigin={{ horizontal: "right", vertical: "top" }}
+        anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
         {chains.map((chain, i) => (
           <MenuItem

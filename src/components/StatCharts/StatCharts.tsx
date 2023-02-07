@@ -75,15 +75,16 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
         </ChartCard>
       </Grid>
       <Grid key="txChart" item xs={12} md={6} lg={3}>
-        <ChartCard title={t("Transaction count")}
-         style={{
-          background: "transparent",
-          borderRadius: "8px",
-          border: "1px solid #e7eaf3",
-          // padding: "2rem",
-          boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
-          margin: "1rem",
-        }}
+        <ChartCard
+          title={t("Transaction Count")}
+          style={{
+            background: "transparent",
+            borderRadius: "8px",
+            border: "1px solid #e7eaf3",
+            // padding: "2rem",
+            boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
+            margin: "1rem",
+          }}
         >
           <VictoryChart
             height={config.chartHeight}
@@ -95,15 +96,16 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
         </ChartCard>
       </Grid>
       <Grid key="gasUsed" item xs={12} md={6} lg={3}>
-        <ChartCard title={t("Gas Used")}
-         style={{
-          background: "transparent",
-          borderRadius: "8px",
-          border: "1px solid #e7eaf3",
-          // padding: "2rem",
-          boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
-          margin: "1rem",
-        }}
+        <ChartCard
+          title={t("Gas Used")}
+          style={{
+            background: "transparent",
+            borderRadius: "8px",
+            border: "1px solid #e7eaf3",
+            // padding: "2rem",
+            boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
+            margin: "1rem",
+          }}
         >
           <VictoryChart
             height={config.chartHeight}
@@ -115,15 +117,16 @@ const StatCharts: React.FC<IProps> = ({ blocks, victoryTheme }) => {
         </ChartCard>
       </Grid>
       <Grid key="uncles" item xs={12} md={6} lg={3}>
-        <ChartCard title={t("Uncles")}
-         style={{
-          background: "transparent",
-          borderRadius: "8px",
-          border: "1px solid #e7eaf3",
-          // padding: "2rem",
-          boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
-          margin: "1rem",
-        }}
+        <ChartCard
+          title={t("Uncles")}
+          style={{
+            background: "transparent",
+            borderRadius: "8px",
+            border: "1px solid #e7eaf3",
+            // padding: "2rem",
+            boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
+            margin: "1rem",
+          }}
         >
           <VictoryChart
             height={config.chartHeight}
