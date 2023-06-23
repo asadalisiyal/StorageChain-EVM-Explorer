@@ -5,23 +5,23 @@ import React from "react";
 
 // const mergeChainSets = (c1: Chain[], c2: Chain[]) => uniqBy(c1.concat(c2), "name");
 
-export default function() {
+export default function () {
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "OTO",
-      network: "mainnet",
-      rpc: ["http://135.181.49.66:9933/"],
-    },
-    {
-      name: "Matic",
-      network: "mainnet",
-      rpc: ["https://rpc-mainnet.matic.network"],
-    },
-    {
-      name: "Matic - Mumbai",
+      name: "StorageChain",
       network: "testnet",
-      rpc: ["https://rpc-mumbai.matic.today"],
+      rpc: ["https://validator-node1.invo.zone"],
     },
+    {
+      name: "StorageChain",
+      network: "mainnet",
+      rpc: ["https://storchain-mainnet.invo.zone"],
+    },
+    // {
+    //   name: "Matic - Mumbai",
+    //   network: "testnet",
+    //   rpc: ["https://rpc-mumbai.matic.today"],
+    // },
   ]);
 
   // uncomment once we add 'chain list provider' concept. This list blows.

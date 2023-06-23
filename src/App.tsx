@@ -48,7 +48,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import expeditionLogo from "./cchat.jpg";
+import expeditionLogo from "./logo.svg";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -65,9 +65,9 @@ function App(props: any) {
   const { t } = useTranslation();
   const darkMode = useDarkMode();
   const [search, setSearch] = useState();
-  const theme = 
-  // darkMode.value ? darkTheme :
-   lightTheme;
+  const theme =
+    // darkMode.value ? darkTheme :
+    lightTheme;
 
   const [selectedChain, setSelectedChain] = useState<Chain>();
   const [chains, setChains] = useChainListStore<[Chain[], Dispatch<Chain[]>]>();
@@ -279,16 +279,21 @@ function App(props: any) {
                         <img
                           alt="expedition-logo"
                           height="30"
-                          style={{ marginRight: "10px",width: "40px",height: "40px", borderRadius: "50%" }}
+                          style={{
+                            marginRight: "10px",
+                            width: "175px",
+                            height: "auto",
+                            // borderRadius: "50%",
+                          }}
                           src={expeditionLogo}
                         />
                       </Grid>
-                      <Grid>
+                      {/* <Grid>
                         <Typography color="textSecondary" variant="h6">
-                          {/* {t("Expedition")} */}
+                          {t("Expedition")}
                           OTO
                         </Typography>
-                      </Grid>
+                      </Grid> */}
                     </Grid>
                   </Link>
                 </Grid>
@@ -296,7 +301,7 @@ function App(props: any) {
                   <Button
                     color="primary"
                     variant="outlined"
-                    endIcon={<ArrowForwardIos/>}
+                    endIcon={<ArrowForwardIos />}
                     onClick={() => history.push("/stats/miners")}
                   >
                     More Stats
@@ -323,7 +328,7 @@ function App(props: any) {
                     borderRadius: "4px",
                     padding: "5px 10px 5px 10px",
                     marginRight: "5px",
-                    border: "2px solid #08a771",
+                    border: "2px solid #088DCD",
                   }}
                 /> */}
                 </Grid>
@@ -347,14 +352,17 @@ function App(props: any) {
                     </>
                   )}
                   <Tooltip title={t("Add custom chain") as string}>
-                    <IconButton onClick={openAddChainModal} className="icon-color">
+                    <IconButton
+                      onClick={openAddChainModal}
+                      className="icon-color"
+                    >
                       <PlaylistAddIcon />
                     </IconButton>
                   </Tooltip>
                   <LanguageMenu />
                   <Tooltip title={t("JSON-RPC API Documentation") as string}>
                     <IconButton
-                     className="icon-color"
+                      className="icon-color"
                       onClick={
                         () =>
                           window.open(
@@ -393,14 +401,20 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#08a771",
+            backgroundColor: "#088DCD",
             padding: "3rem",
           }}
         >
-          <div style={{ maxWidth: "1400px", margin: "auto", paddingLeft: "1.5rem" }}>
+          <div
+            style={{
+              maxWidth: "1400px",
+              margin: "auto",
+              paddingLeft: "1.5rem",
+            }}
+          >
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The OTO Blockchain Explorer
+                The Storage Chain Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"
