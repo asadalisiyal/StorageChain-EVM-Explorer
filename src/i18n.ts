@@ -15,8 +15,8 @@ interface IMap {
 }
 
 const momentMap: IMap = {
-  "kr": "ko",
-  "cn": "zh-cn",
+  kr: "ko",
+  cn: "zh-cn",
   "en-US": "en-ca",
 };
 
@@ -29,6 +29,8 @@ i18n
       kr: { translation: krJSON },
       cn: { translation: cnJSON },
     },
+    lng: "en-US",
+    fallbackLng: "en-US",
     interpolation: {
       escapeValue: false,
       format: (value, format, lng) => {
@@ -39,22 +41,24 @@ i18n
           return;
         }
         const ln = momentMap[lng];
-        const result = moment(value).locale(ln || "en").format("MMMM Do YYYY, h:mm:ss a");
+        const result = moment(value)
+          .locale(ln || "en")
+          .format("MMMM Do YYYY, h:mm:ss a");
         return result as any;
       },
     },
   });
 
 export const reverseSupportedLanguages: IMap = {
-  "EN": "en-US", //tslint:disable-line
-  "中文": "cn", //tslint:disable-line
-  "한국어": "kr", //tslint:disable-line
+  EN: "en-US", //tslint:disable-line
+  中文: "cn", //tslint:disable-line
+  한국어: "kr", //tslint:disable-line
 };
 
 export const supportedLanguages: IMap = {
   "en-US": "EN",
-  "cn": "中文",
-  "kr": "한국어",
+  cn: "中文",
+  kr: "한국어",
 };
 
 export const changeLanguage = (l: string) => {
