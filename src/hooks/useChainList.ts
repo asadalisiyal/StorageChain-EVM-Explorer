@@ -8,7 +8,7 @@ import React from "react";
 export default function () {
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "StorageChain",
+      name: "StorageChain Testnet",
       network: "testnet",
       rpc: ["https://validator-node1.invo.zone"],
     },
