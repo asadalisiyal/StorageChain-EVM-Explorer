@@ -10,12 +10,12 @@ export default function () {
     {
       name: "StorageChain Testnet",
       network: "testnet",
-      rpc: ["https://validator-node1.invo.zone"],
+      rpc: ["https://testnet-validator.storagechain.io"],
     },
     {
       name: "StorageChain",
       network: "mainnet",
-      rpc: ["https://storchain-mainnet.invo.zone"],
+      rpc: ["https://mainnet-validator.storagechain.io"],
     },
     // {
     //   name: "Matic - Mumbai",
