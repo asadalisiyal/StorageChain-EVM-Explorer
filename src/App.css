@@ -14,7 +14,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #088dcd;
+  background: #2C2C2C;
   border-radius: 5px;
 }
 
@@ -31,25 +31,25 @@ body {
 }
 
 .position-stats > Button {
-  border: 2px solid #088dcd !important;
+  border: 2px solid #2C2C2C !important;
   font-size: 0.875rem;
   color: black;
 }
 
 .icon-color svg {
-  fill: #088dcd;
+  fill: #2C2C2C;
 }
 
 .icon-arrow svg {
-  fill: #088dcd;
+  fill: #2C2C2C;
   font-size: 18px;
 }
 
 .MuiButton-iconSizeMedium > *:first-child {
   font-size: 16px !important;
-  fill: #088dcd;
+  fill: #2C2C2C;
 }
 
 .MuiTypography-colorPrimary {
-  color: #088dcd !important;
+  color: #2C2C2C !important;
 }
