@@ -48,7 +48,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import expeditionLogo from "./logo.jpeg";
+import expeditionLogo from "./logo1.png";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -281,9 +281,9 @@ function App(props: any) {
                           height="30"
                           style={{
                             marginRight: "10px",
-                            width: "80px",
+                            width: "150px",
                             height: "auto",
-                            borderRadius: "50%",
+                            // borderRadius: "50%",
                           }}
                           src={expeditionLogo}
                         />
@@ -404,7 +404,7 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#312f60",
+            backgroundColor: "#121723",
             padding: "3rem",
           }}
         >
