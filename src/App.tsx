@@ -253,7 +253,7 @@ function App(props: any) {
             elevation={0}
             style={{ maxWidth: "1400px", margin: "auto" }}
           >
-            <Toolbar style={{ minHeight: "80px", backgroundColor: '#1c2841' }}>
+            <Toolbar style={{ minHeight: "80px"}}>
               <Grid
                 justify="space-between"
                 alignItems="center"
@@ -301,7 +301,7 @@ function App(props: any) {
                   <Button
                     color="primary"
                     variant="outlined"
-                    style={{ color: '#1aa6ff', border:'2px solid red' }}
+                    // style={{ color: '#1aa6ff', border:'2px solid red' }}  
                     endIcon={<ArrowForwardIos />}
                     onClick={() => history.push("/stats/miners")}
                   >
@@ -357,7 +357,6 @@ function App(props: any) {
                   <Tooltip title={t("Add custom chain") as string}>
                     <IconButton
                       onClick={openAddChainModal}
-                      style={{ color: '#b9b9b9' }}
                     >
                       <PlaylistAddIcon />
                     </IconButton>
@@ -365,7 +364,6 @@ function App(props: any) {
                   <LanguageMenu />
                   <Tooltip title={t("JSON-RPC API Documentation") as string}>
                     <IconButton
-                      style={{ color: '#b9b9b9' }}
                       onClick={
                         () =>
                           window.open(
@@ -406,7 +404,7 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#088DCD",
+            backgroundColor: "#312f60",
             padding: "3rem",
           }}
         >

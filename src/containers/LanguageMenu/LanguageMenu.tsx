@@ -24,7 +24,7 @@ const LanguageMenu: React.FC = (props) => {
   return (
     <>
       <Tooltip title={t("Change Language") as string}>
-        <Button style={{color:'#fff'}} onClick={handleClick}>{supportedLanguages[i18n.language]}</Button>
+        <Button onClick={handleClick}>{supportedLanguages[i18n.language]}</Button>
       </Tooltip>
       <Menu
         id="simple-menu"
