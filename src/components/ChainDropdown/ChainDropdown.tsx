@@ -32,7 +32,7 @@ const ChainDropdown: React.FC<IProps> = (props: IProps) => {
   return (
     <>
       <Tooltip title={t("Switch Chain") as string}>
-        <Button onClick={handleClick}>{selected.name}</Button>
+        <Button style={{color:'#fff'}} onClick={handleClick}>{selected.name}</Button>
       </Tooltip>
 
       <Menu

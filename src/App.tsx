@@ -48,7 +48,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import expeditionLogo from "./logo.svg";
+import expeditionLogo from "./logo.jpeg";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -253,7 +253,7 @@ function App(props: any) {
             elevation={0}
             style={{ maxWidth: "1400px", margin: "auto" }}
           >
-            <Toolbar style={{ minHeight: "80px" }}>
+            <Toolbar style={{ minHeight: "80px", backgroundColor: '#1c2841' }}>
               <Grid
                 justify="space-between"
                 alignItems="center"
@@ -281,9 +281,9 @@ function App(props: any) {
                           height="30"
                           style={{
                             marginRight: "10px",
-                            width: "175px",
+                            width: "80px",
                             height: "auto",
-                            // borderRadius: "50%",
+                            borderRadius: "50%",
                           }}
                           src={expeditionLogo}
                         />
@@ -301,6 +301,7 @@ function App(props: any) {
                   <Button
                     color="primary"
                     variant="outlined"
+                    style={{ color: '#1aa6ff', border:'2px solid red' }}
                     endIcon={<ArrowForwardIos />}
                     onClick={() => history.push("/stats/miners")}
                   >
@@ -343,7 +344,9 @@ function App(props: any) {
                     <>
                       {query && query.rpcUrl && (
                         <Tooltip title={query.rpcUrl}>
-                          <IconButton>
+                          <IconButton
+                            style={{ color: '#fff' }}
+                          >
                             <NetworkWifi />
                           </IconButton>
                         </Tooltip>
@@ -354,7 +357,7 @@ function App(props: any) {
                   <Tooltip title={t("Add custom chain") as string}>
                     <IconButton
                       onClick={openAddChainModal}
-                      className="icon-color"
+                      style={{ color: '#b9b9b9' }}
                     >
                       <PlaylistAddIcon />
                     </IconButton>
@@ -362,7 +365,7 @@ function App(props: any) {
                   <LanguageMenu />
                   <Tooltip title={t("JSON-RPC API Documentation") as string}>
                     <IconButton
-                      className="icon-color"
+                      style={{ color: '#b9b9b9' }}
                       onClick={
                         () =>
                           window.open(
@@ -393,6 +396,8 @@ function App(props: any) {
             </Toolbar>
           </AppBar>
         </div>
+
+
         <AddChain
           open={addChainDialogIsOpen}
           onCancel={cancelAddChainDialog}
