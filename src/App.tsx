@@ -48,7 +48,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import expeditionLogo from "./logo1.png";
+import expeditionLogo from "./logo.jpeg";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -281,9 +281,9 @@ function App(props: any) {
                           height="30"
                           style={{
                             marginRight: "10px",
-                            width: "150px",
+                            width: "80px",
                             height: "auto",
-                            // borderRadius: "50%",
+                            borderRadius: "50%",
                           }}
                           src={expeditionLogo}
                         />
@@ -404,7 +404,7 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#121723",
+            backgroundColor: "#353261",
             padding: "3rem",
           }}
         >
@@ -417,7 +417,7 @@ function App(props: any) {
           >
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The Link Blockchain Explorer
+                The MetaLink Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"
