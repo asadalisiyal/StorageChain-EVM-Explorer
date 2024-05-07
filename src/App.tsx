@@ -404,7 +404,7 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#121723",
+            backgroundColor: "#ffb300",
             padding: "3rem",
           }}
         >
@@ -417,7 +417,7 @@ function App(props: any) {
           >
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The StorageChain Blockchain Explorer
+                The ZonicChain Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"
