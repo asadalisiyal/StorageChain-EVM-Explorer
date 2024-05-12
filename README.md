@@ -59,7 +59,8 @@ git clone https://github.com/xops/expedition.git && cd expedition && npm install
 ```
 
 <!-- example usage, screen shots, demos -->
-## Usage
+## Install Dependencies
+npm install
 
 ### Start the explorer
 ```bash
