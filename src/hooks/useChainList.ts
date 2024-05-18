@@ -10,13 +10,13 @@ export default function () {
     {
       name: "ZonicChain Testnet",
       network: "testnet",
-      rpc: ["https://testnet-validator.storagechain.io"],
+      rpc: ["https://rpc.zonicchain.com"],
     },
-    {
-      name: "ZonicChain",
-      network: "mainnet",
-      rpc: ["https://mainnet-validator.storagechain.io"],
-    },
+    // {
+    //   name: "ZonicChain",
+    //   network: "mainnet",
+    //   rpc: ["https://mainnet-validator.storagechain.io"],
+    // },
     // {
     //   name: "Matic - Mumbai",
     //   network: "testnet",
