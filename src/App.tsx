@@ -282,7 +282,7 @@ function App(props: any) {
                           style={{
                             marginRight: "10px",
                             backgroundColor: '#c0c0c0',
-                            width: "220px",
+                            width: "80px",
                             height: "auto",
                             borderRadius: "10px",
                           }}
