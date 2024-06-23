@@ -48,7 +48,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import expeditionLogo from "./logo.jpeg";
+import expeditionLogo from "./logo-global-crop.png";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -253,7 +253,7 @@ function App(props: any) {
             elevation={0}
             style={{ maxWidth: "1400px", margin: "auto" }}
           >
-            <Toolbar style={{ minHeight: "80px"}}>
+            <Toolbar style={{ minHeight: "80px" }}>
               <Grid
                 justify="space-between"
                 alignItems="center"
@@ -276,15 +276,15 @@ function App(props: any) {
                   >
                     <Grid container alignItems="center">
                       <Grid>
-                      <p>Testing Access</p>
                         <img
                           alt="expedition-logo"
                           height="30"
                           style={{
                             marginRight: "10px",
-                            width: "80px",
+                            backgroundColor: '#c0c0c0',
+                            width: "220px",
                             height: "auto",
-                            borderRadius: "50%",
+                            borderRadius: "10px",
                           }}
                           src={expeditionLogo}
                         />
@@ -418,7 +418,7 @@ function App(props: any) {
           >
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The MetaLink Blockchain Explorer
+                The Global News Network Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"
