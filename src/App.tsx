@@ -276,6 +276,7 @@ function App(props: any) {
                   >
                     <Grid container alignItems="center">
                       <Grid>
+                      <p>Testing Access</p>
                         <img
                           alt="expedition-logo"
                           height="30"
