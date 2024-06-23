@@ -8,12 +8,12 @@ import React from "react";
 export default function () {
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "MetaLink Testnet",
+      name: "Global Network Foundation Testnet",
       network: "testnet",
       rpc: ["https://testnet-validator.storagechain.io"],
     },
     {
-      name: "MetaLink",
+      name: "Global Network Foundation",
       network: "mainnet",
       rpc: ["https://mainnet-validator.storagechain.io"],
     },
