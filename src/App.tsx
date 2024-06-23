@@ -405,7 +405,7 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#353261",
+            backgroundColor: "#0f968b",
             padding: "3rem",
           }}
         >
