@@ -48,7 +48,7 @@ import {
 import { createPreserveQueryHistory } from "./helpers/createPreserveHistory";
 import BlockRawContainer from "./containers/BlockRawContainer";
 import TransactionRawContainer from "./containers/TransactionRawContainer";
-import expeditionLogo from "./logo-global-crop.png";
+import expeditionLogo from "./logo.jpeg";
 import MinerStatsPage from "./containers/MinerStatsPage";
 import { IChain as Chain } from "./models/chain";
 import useChainListStore from "./stores/useChainListStore";
@@ -418,7 +418,7 @@ function App(props: any) {
           >
             <Grid item md={6} xs={12}>
               <h1 style={{ color: "#fff", marginBottom: "0.5rem" }}>
-                The Global News Network Blockchain Explorer
+                The MetaLink Blockchain Explorer
               </h1>
               <InputBase
                 className="input-field"
