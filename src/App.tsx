@@ -76,8 +76,7 @@ function App(props: any) {
   const [addChainDialogIsOpen, setAddChainDialogIsOpen] =
     useState<boolean>(false);
 
-  // default the selectedChain once chain list loads
-  useEffect(() => {
+    useEffect(() => {
     if (selectedChain !== undefined) {
       return;
     }
@@ -90,10 +89,7 @@ function App(props: any) {
     if (query.rpcUrl) {
       return;
     }
-
     setSelectedChain(chains[0]);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chains, selectedChain]);
 
   const [query, setQuery] = useQueryParams({
@@ -101,8 +97,6 @@ function App(props: any) {
     rpcUrl: StringParam,
   });
 
-  // when url param is used to pick network,
-  // keep things updated once chains list is loaded
   useEffect(() => {
     if (!chains || chains.length === 0) {
       return;
@@ -125,16 +119,13 @@ function App(props: any) {
     } else {
       setSelectedChain(chains[0]);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chains, query.network]);
 
-  // keeps the window.location in sync with selected network
   useEffect(() => {
     if (selectedChain === undefined) {
       return;
     }
     const { name } = selectedChain as Chain;
-
     if (name !== query.network) {
       setQuery({ network: name });
       history.push({
@@ -145,7 +136,6 @@ function App(props: any) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedChain, setQuery]);
 
-  // keep selected chain in sync with the current ethrpc instance
   useEffect(() => {
     if (selectedChain !== undefined) {
       setEthRPCChain(selectedChain);
@@ -229,10 +219,6 @@ function App(props: any) {
     setAddChainDialogIsOpen(true);
   };
 
-  // const openAddChainModal = () => {
-  //   setAddChainDialogIsOpen(true);
-  // };
-
   const cancelAddChainDialog = () => {
     setAddChainDialogIsOpen(false);
   };
@@ -289,12 +275,6 @@ function App(props: any) {
                           src={expeditionLogo}
                         />
                       </Grid>
-                      {/* <Grid>
-                        <Typography color="textSecondary" variant="h6">
-                          {t("Expedition")}
-                          OTO
-                        </Typography>
-                      </Grid> */}
                     </Grid>
                   </Link>
                 </Grid>
@@ -302,37 +282,11 @@ function App(props: any) {
                   <Button
                     color="primary"
                     variant="outlined"
-                    // style={{ color: '#1aa6ff', border:'2px solid red' }}  
                     endIcon={<ArrowForwardIos />}
                     onClick={() => history.push("/stats/miners")}
                   >
                     More Stats
                   </Button>
-                  {/* <InputBase
-                className="input-field"
-                  placeholder={t(
-                    "Enter an Address, Transaction Hash or Block Number"
-                  )}
-                  onKeyDown={(event: KeyboardEvent<HTMLInputElement>) => {
-                    if (event.keyCode === 13) {
-                      handleSearch(search);
-                    }
-                  }}
-                  onChange={(event: ChangeEvent<HTMLInputElement>) => {
-                    if (event.target.value) {
-                      const { value } = event.target;
-                      setSearch(value as any);
-                    }
-                  }}
-                  fullWidth
-                  style={{
-                    background: "transparent",
-                    borderRadius: "4px",
-                    padding: "5px 10px 5px 10px",
-                    marginRight: "5px",
-                    border: "2px solid #088DCD",
-                  }}
-                /> */}
                 </Grid>
                 <Grid item>
                   {selectedChain ? (
@@ -375,21 +329,6 @@ function App(props: any) {
                       <NotesIcon />
                     </IconButton>
                   </Tooltip>
-                  {/* <Tooltip title={t("Expedition Github") as string}>
-                    <IconButton
-                     className="icon-color"
-                      onClick={() =>
-                        window.open("https://github.com/xops/expedition")
-                      }
-                    >
-                      <CodeIcon />
-                    </IconButton>
-                  </Tooltip> */}
-                  {/* <Tooltip title={t("Toggle Dark Mode") as string}>
-                    <IconButton onClick={darkMode.toggle} className="icon-color">
-                      {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
-                    </IconButton>
-                  </Tooltip> */}
                 </Grid>
               </Grid>
             </Toolbar>
