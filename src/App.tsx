@@ -76,7 +76,7 @@ function App(props: any) {
   const [addChainDialogIsOpen, setAddChainDialogIsOpen] =
     useState<boolean>(false);
 
-    useEffect(() => {
+  useEffect(() => {
     if (selectedChain !== undefined) {
       return;
     }
@@ -240,13 +240,9 @@ function App(props: any) {
             style={{ maxWidth: "1400px", margin: "auto" }}
           >
             <Toolbar style={{ minHeight: "80px" }}>
-              <Grid
-                justify="space-between"
-                alignItems="center"
-                alignContent="center"
-                container
-              >
-                <Grid item style={{ marginTop: "8px" }}>
+              <div className="header">
+
+                <div>
                   <Link
                     component={({
                       className,
@@ -260,25 +256,24 @@ function App(props: any) {
                       </RouterLink>
                     )}
                   >
-                    <Grid container alignItems="center">
-                      <Grid>
-                        <img
-                          alt="expedition-logo"
-                          height="30"
-                          style={{
-                            marginRight: "10px",
-                            backgroundColor: '#c0c0c0',
-                            width: "220px",
-                            height: "auto",
-                            borderRadius: "10px",
-                          }}
-                          src={expeditionLogo}
-                        />
-                      </Grid>
-                    </Grid>
+                    <img
+                      alt="expedition-logo"
+                      height="30"
+                      style={{
+                        marginRight: "10px",
+                        backgroundColor: '#c0c0c0',
+                        width: "220px",
+                        height: "auto",
+                        borderRadius: "10px",
+                      }}
+                      src={expeditionLogo}
+                    />
                   </Link>
-                </Grid>
-                <Grid item md={6} xs={12} className="position-stats">
+                </div>
+
+
+
+                <div className="position-stats">
                   <Button
                     color="primary"
                     variant="outlined"
@@ -287,8 +282,10 @@ function App(props: any) {
                   >
                     More Stats
                   </Button>
-                </Grid>
-                <Grid item>
+                </div>
+
+
+                <div>
                   {selectedChain ? (
                     <ChainDropdown
                       chains={chains}
@@ -329,8 +326,10 @@ function App(props: any) {
                       <NotesIcon />
                     </IconButton>
                   </Tooltip>
-                </Grid>
-              </Grid>
+                </div>
+
+
+              </div>
             </Toolbar>
           </AppBar>
         </div>

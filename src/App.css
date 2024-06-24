@@ -1,7 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   overflow-x: hidden;
   max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 4px;
+  width: 100%
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +49,7 @@ body {
   align-items: center;
 }
 
-.position-stats > Button {
+.position-stats>Button {
   border: 2px solid #088dcd !important;
   font-size: 0.875rem;
   color: black;
@@ -45,7 +64,7 @@ body {
   font-size: 18px;
 }
 
-.MuiButton-iconSizeMedium > *:first-child {
+.MuiButton-iconSizeMedium>*:first-child {
   font-size: 16px !important;
   fill: #088dcd;
 }
