@@ -87,7 +87,7 @@ function TxView(props: ITxViewProps) {
 
           <TableRow>
             <TableCell>{t("Value")}</TableCell>
-            <TableCell>{unit.fromWei(tx.value, "ether")} STOR</TableCell>
+            <TableCell>{unit.fromWei(tx.value, "ether")} WLE</TableCell>
           </TableRow>
 
           <TableRow>
@@ -217,7 +217,7 @@ function TxView(props: ITxViewProps) {
 
             <TableRow>
               <TableCell>{t("Value")}</TableCell>
-              <TableCell>{unit.fromWei(tx.value, "ether")} STOR</TableCell>
+              <TableCell>{unit.fromWei(tx.value, "ether")} WLE</TableCell>
             </TableRow>
 
             <TableRow>

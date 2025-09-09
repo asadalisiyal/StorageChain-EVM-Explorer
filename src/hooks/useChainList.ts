@@ -8,14 +8,14 @@ import React from "react";
 export default function () {
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "StorageChain Testnet",
+      name: "Walee Testnet",
       network: "testnet",
-      rpc: ["https://testnet-validator.storagechain.io"],
+      rpc: ["http://localhost:8545"],
     },
     {
-      name: "StorageChain",
+      name: "Walee Mainnet",
       network: "mainnet",
-      rpc: ["https://mainnet-validator.storagechain.io"],
+      rpc: ["https://evm.walee.pk"],
     },
     // {
     //   name: "Matic - Mumbai",
