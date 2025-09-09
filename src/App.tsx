@@ -277,7 +277,7 @@ function App(props: any) {
                     <Grid container alignItems="center">
                       <Grid>
                         <img
-                          alt="expedition-logo"
+                          alt="walee-logo"
                           height="30"
                           style={{
                             marginRight: "10px",
@@ -401,7 +401,7 @@ function App(props: any) {
         <div
           style={{
             height: "300px",
-            backgroundColor: "#088DCD",
+            backgroundColor: "#6731f7",
             padding: "3rem",
           }}
         >
